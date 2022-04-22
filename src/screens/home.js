@@ -23,6 +23,8 @@ const Home = () => {
       {error && <h2>{error}</h2>}
       Welcome {currentUser.email}
       <br/>
+      <Link to="/chat">Super Chat</Link>
+      <br/>
       <Link to="/profile">Profile</Link>
       <br/>
       <button onClick={handleSignout}>

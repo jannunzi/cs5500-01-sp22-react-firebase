@@ -8,12 +8,14 @@ import Home from "./screens/home";
 import Profile from "./screens/profile";
 import Administrator from "./screens/admin";
 import ProtectedRoute from "./routes/protected-route";
+import SuperChat from "./screens/super-chat";
 
 function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
         <Routes>
+          <Route path="/chat"    element={<SuperChat/>}/>
           <Route path="/"        element={<Login/>}/>
           <Route path="/signup"  element={<Signup/>}/>
           <Route path="/home"    element={
